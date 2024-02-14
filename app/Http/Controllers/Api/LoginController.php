@@ -24,7 +24,7 @@ class LoginController extends Controller
 
         return response()->json([
             'message' => 'Unauthorized'
-        ], Response::HTTP_NOT_FOUND);
+        ], Response::HTTP_UNAUTHORIZED);
     }
 
     public function validatelogin(Request $request)
